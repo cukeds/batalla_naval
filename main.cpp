@@ -26,13 +26,13 @@ int main(){
 
     string x;
     while(true){
+        system("cls");
         player.attack(&e);
         player.update();
         if(cpu.getHasLost()) break;
         cpu.attack(&p);
         cpu.update();
         if(player.getHasLost()) break;
-        system("cls");
         system("pause");
     }
 

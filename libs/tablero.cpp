@@ -16,8 +16,8 @@ Tablero::Tablero(int altura, int ancho){
 	}
 }
 bool Tablero::insert_barco(Barco* b, int x, int y){
-    if ((x + b->getTamaño()) * 1-b->getOrientacion() >= ancho) return false;
-    if ((y + b->getTamaño()) * b->getOrientacion() >= altura) return false;
+    if ((x + b->getTamaño()) * 1-b->getOrientacion() > ancho) return false;
+    if ((y + b->getTamaño()) * b->getOrientacion() > altura) return false;
     for(int i = 0; i < b->getTamaño(); i++){
         if(b->getOrientacion()){
             if(grilla_barcos[y+i][x] == SHIP) return false;
