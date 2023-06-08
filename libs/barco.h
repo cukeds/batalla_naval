@@ -5,11 +5,11 @@ using namespace std;
 
 class Barco{
 private:
-	int tamaño{};
-	int orientacion{};
-	int x{};
-	int y{};
-    bool sunk{};
+	int tamaño;
+	int orientacion;
+	int x;
+	int y;
+    bool sunk;
 
 public:
     Barco();
